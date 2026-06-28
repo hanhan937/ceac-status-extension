@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CEAC Status Prefill Settings</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="options">
+    <main class="settings-panel">
+      <header>
+        <div>
+          <h1>CEAC Status Prefill</h1>
+          <p class="summary">Saved locally in Chrome extension storage. The extension opens only the official CEAC status page.</p>
+        </div>
+      </header>
+
+      <form id="settings-form">
+        <fieldset>
+          <legend>Visa Type</legend>
+          <label class="radio-row">
+            <input type="radio" name="visaType" value="IV">
+            <span>Immigrant Visa (IV)</span>
+          </label>
+          <label class="radio-row">
+            <input type="radio" name="visaType" value="NIV">
+            <span>Nonimmigrant Visa (NIV)</span>
+          </label>
+        </fieldset>
+
+        <label>
+          <span id="case-label">Case number</span>
+          <input id="caseNumber" autocomplete="off" required>
+        </label>
+
+        <label id="location-row">
+          <span>Consular location</span>
+          <input id="location" autocomplete="off" placeholder="Visible location name or option value">
+        </label>
+
+        <label>
+          <span>Passport number</span>
+          <input id="passportNumber" autocomplete="off" required>
+        </label>
+
+        <label>
+          <span>First 5 letters of surname</span>
+          <input id="surname" autocomplete="off" maxlength="5" required>
+        </label>
+
+        <div class="actions">
+          <button class="primary" type="submit">Save</button>
+          <button id="clear" class="secondary" type="button">Clear</button>
+        </div>
+
+        <p id="status" class="status" role="status"></p>
+      </form>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
