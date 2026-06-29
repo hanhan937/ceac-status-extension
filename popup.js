@@ -22,7 +22,7 @@ async function refresh() {
     summary.textContent = `${config.visaType} profile is ready. CAPTCHA stays manual.`;
     openButton.disabled = false;
   } else {
-    summary.textContent = "Add your CEAC details in settings first.";
+    summary.textContent = "Add your application details in settings first.";
     openButton.disabled = true;
   }
 }

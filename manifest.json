@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "CEAC Status Prefill",
-  "version": "1.0.0",
-  "description": "Open the official CEAC visa status tracker and prefill saved fields. CAPTCHA and submission stay manual.",
+  "name": "US Visa Status Check Prefill",
+  "version": "1.0.1",
+  "description": "Open the official US visa status tracker page and prefill saved fields. CAPTCHA and submission stay manual.",
   "action": {
     "default_popup": "popup.html",
-    "default_title": "CEAC Status Prefill"
+    "default_title": "US Visa Status Check Prefill"
   },
   "background": {
     "service_worker": "background.js"
